@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Samay</a>
+      <ul class="navigation">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section class="parallax">
+      <h2 id="text">Parallax Website</h2>
+      <img src="monutain_01.png" id="m1">
+      <img src="trees_02.png" id="t2">
+      <img src="monutain_02.png" id="m2">
+      <img src="trees_01.png" id="t1">
+      <img src="man.png" id="man">
+      <img src="plants.png" id="plants">
+    </section>
+    <section class="sec">
+      <h2>About Me</h2>
+      <p>Hi, My Name is Samay 
+        and I am a B.Tech student in Computer Science and Engineering at Newton School of Technology,<br>
+        I am a passionate first-year B.Tech student with a unique blend of technical skills and creative abilities. 
+My journey combines technology and art, allowing me to approach problem-solving from multiple perspectives.
+My vision is to become a web developer, diving deep into HTML, CSS, and JavaScript to explore more groundbreaking solutions that push the limits of innovation in web development. <br>
+• My journey as a content creator, with a following of over 700K subscribers on YouTube, has honed my skills in digital engagement and creative expression. 
+"I manage two successful YouTube channels.
+My primary channel, with over 230k subscribers, is dedicated to my personal art sketches, where I share my creativity and passion for art. My secondary channel, with over 500k subscribers, focuses on football edit videos, capturing the excitement and energy of the sport. I strive to engage and inspire my audience across both platforms with high-quality, engaging content."
+& I Passionate about art sketching and enjoy playing football, basketball, and table tennis.
+      </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.from("#m1",{
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 100,
+      })
+      gsap.from("#m2",{
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 50,
+      })
+      gsap.from("#t2",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -50,
+      })
+      gsap.from("#t1",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: 50,
+      })
+      gsap.from("#man",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -250,
+      })
+      gsap.from("#plants",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -50,
+      })
+      gsap.from("#text",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: 600,
+      })
+    </script>
+  </body>
+</html>
